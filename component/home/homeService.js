@@ -3,4 +3,9 @@
  */
 angular.module('grafie.home').controller('homeController', function($stateParams, $scope, $rootScope){
 
+    $scope.switchLogDiv = function (){
+        $('#homeInfo').fadeOut('fast', 'linear');
+        $('#homeLogin').fadeIn('slow', 'linear');
+    };
+
 });
