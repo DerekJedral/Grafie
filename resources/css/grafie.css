@@ -1,6 +1,7 @@
 .wrapper{
     margin-top: 51px;
     height: 100vh;
+    width: auto;
 }
 .backgroundHome{
     margin-top: 51px;
@@ -26,6 +27,17 @@
     -o-background-size: auto,cover;
     background-size: auto,cover;
 
+}
+
+#category1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/categories/wedding.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -179,19 +191,19 @@ input:-moz-placeholder {
 
 .bannerimage {
     width: 100%;
-    height: 305px;
+    height: 375px;
     background-color: #333333;
     background-position: center;
 }
-#container-1{
-    width: 300px;
+
+#searchBar{
+    width: 75%;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-    padding: 125px 100px;
 }
-#container-1 input#search{
-    width: 300px;
+#searchBar input#search{
+    width: 100%;
     height: 50px;
     background: #2b303b;
     border: none;
@@ -203,22 +215,22 @@ input:-moz-placeholder {
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-#container-1 input#search::-webkit-input-placeholder {
+#searchBar input#search::-webkit-input-placeholder {
     color: #65737e;
 }
 
-#container-1 input#search:-moz-placeholder { /* Firefox 18- */
+#searchBar input#search:-moz-placeholder { /* Firefox 18- */
     color: #65737e;
 }
 
-#container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+#searchBar input#search::-moz-placeholder {  /* Firefox 19+ */
     color: #65737e;
 }
 
-#container-1 input#search:-ms-input-placeholder {
+#searchBar input#search:-ms-input-placeholder {
     color: #65737e;
 }
-#container-1 .icon{
+#searchBar .icon{
     position: absolute;
     top: 48%;
     margin-left: 17px;
@@ -226,18 +238,4 @@ input:-moz-placeholder {
     z-index: 1;
     color: #4f5b66;
 }
-ul {
-    padding: 0;
-    margin: 0;
-}
-li {
-    display: inline;
-    position: relative;
-}
-ul ul {
-    position: absolute;
-    display: none;
-}
-li:hover ul {
-    display: block;
-}
+
