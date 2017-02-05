@@ -1,12 +1,5 @@
-body {
-    font-family: "Nunito", sans-serif;
-    padding-top: 100px;
-}
-
-.container {
-    width: 406px;
-    max-width: 406px;
-    margin: 0 auto;
+.wrapper{
+    margin-top: 60px;
 }
 
 #signup {
