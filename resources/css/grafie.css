@@ -1,5 +1,17 @@
 .wrapper{
-    margin-top: 60px;
+    margin-top: 51px;
+    height: 100vh;
+}
+.backgroundImg{
+    width: auto;
+    height: 100vh;
+    background-image:  url("../images/pattern.png"),  url('../images/covers2.jpg');
+    background-repeat: repeat, no-repeat;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto,cover;
+    -o-background-size: auto,cover;
+    background-size: auto,cover;
+
 }
 
 #signup {
