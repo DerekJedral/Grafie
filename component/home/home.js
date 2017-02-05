@@ -12,9 +12,8 @@ angular.module('grafie.home', ['ui.router'])
                    templateUrl: function (params) {
                        if (params.type === "grafer") {
                            return 'component/home/views/home-grapher.html';
-                       } else if (params.type === "employer") {
-                           //return '/component/home/views/home-patient.html';
-                           //return '/component/home/views/home-hcp.html';
+                       } else if (params.type === "loginHome") {
+                           return 'component/home/views/home-normal.html';
                        } else {
                            //return '/component/layout/partials/blank.tpl.html';
                            return 'component/home/views/home-general.html';

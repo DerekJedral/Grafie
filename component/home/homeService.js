@@ -1,7 +1,9 @@
 /**
  * Created by Evan on 2017-01-23.
  */
-angular.module('grafie.home').controller('homeController', function($stateParams, $scope, $rootScope){
+angular.module('grafie.home').controller('homeController', function($state, $stateParams, $scope, $rootScope){
+
+    $rootScope.auth = false;
 
     $(document).ready(function(){
         console.log($stateParams);
@@ -16,5 +18,15 @@ angular.module('grafie.home').controller('homeController', function($stateParams
         $('#homeInfo').fadeOut('fast', 'linear');
         $('#homeLogin').fadeIn('slow', 'linear');
     };
+
+
+    $scope.login = function (){
+        $rootScope.auth = true;
+
+        $state.go('grafie.home', {type:'loginHome'});
+
+        $('#preLoginMenu').hide();
+        $('#postLogin').show()
+    }
 
 });

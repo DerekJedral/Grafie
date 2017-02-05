@@ -5,17 +5,17 @@ angular.module('grafie.browse', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider){
         $stateProvider
             .state('grafie.browse', {
-                url: '/browse',
+                url: '/browse/:type',
                 views: {
                     "content@grafie": {
                         templateUrl: function (params) {
-                            return 'component/browse/views/browse.html';
-
-                            //if (params.type === "browse") {
-                            //    return 'component/browse/views/browse.html';
-                            //}else {
-                            //    return 'component/home/views/home-general.html';
-                            //}
+                            if (params.type === "photos") {
+                                return 'component/browse/views/browse-photos.html';
+                            }else if(params.type === "graphers"){
+                                return 'component/browse/views/browse-graphers.html';
+                            } else if(params.type === "jobs"){
+                                return 'component/browse/views/browse-listings.html';
+                            }
                         },
 
                         controller: 'browseController'

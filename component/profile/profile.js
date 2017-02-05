@@ -6,12 +6,19 @@ angular.module('grafie.profile', ['ui.router'])
         console.log('loaded');
         $stateProvider
             .state('grafie.profile', {
-                url: '/profile',
+                url: '/profile/:type',
                 views: {
-                    "content@vemu": {
-                        templateUrl: '/component/profile/profile.tpl.html'
-                    }
-                }
-            });
+                        "content@grafie": {
+                            templateUrl: function (params) {
+                                if (params.type === "grapher") {
+                                    return 'component/profile/views/profile-grapher.html';
+                                }else if(params.type === "self"){
+                                    return 'component/profile/views/profile-self.html';
+                                }
+                            },
 
-    });
+                            controller: 'profileController'
+                        }
+                    }
+                })
+            });
