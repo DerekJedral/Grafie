@@ -19,5 +19,6 @@ angular.module('grafie.layout', ['ui.router'])
                 }
             });
         $urlRouterProvider.otherwise('/auth/signup');
+        //$urlRouterProvider.otherwise('/home/general');
         //$urlRouterProvider.otherwise('/record');
     });
