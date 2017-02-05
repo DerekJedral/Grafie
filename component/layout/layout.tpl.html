@@ -30,14 +30,14 @@
 <div class="navbar navbar-inverse navbar-fixed-top trans-before" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand">Grafie</a>
+            <a ui-sref="grafie.home({type:'general'})" class="navbar-brand">Grafie</a>
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">Browse</a></li>
+            <li><a  ui-sref="grafie.browse({type:'patient'})">Browse</a></li>
             <li><a href="#events">Find a Grapher</a></li>
-            <li><a href="#sponsors">Log In</a></li>
-            <li><a href="#faq">Sign Up</a></li>
+            <li><a ui-sref="grafie.auth({type:'login'})">Log In</a></li>
+            <li><a ui-sref="grafie.auth({type:'signup'})">Sign Up</a></li>
         </ul>
     </div>
 </div><!--.navbar-default-->
