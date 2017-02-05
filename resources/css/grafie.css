@@ -191,7 +191,7 @@ input:-moz-placeholder {
 
 .bannerimage {
     width: 100%;
-    height: 375px;
+    height: auto;
     background-color: #333333;
     background-position: center;
 }
