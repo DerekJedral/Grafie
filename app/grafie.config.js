@@ -25,7 +25,8 @@ var $components = [
     'grafie.layout',
     'grafie.home',
     'grafie.profile',
-    'grafie.auth'
+    'grafie.auth',
+    'grafie.browse'
 ];
 
 $dependencies = $dependencies.concat($components);
