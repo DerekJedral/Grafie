@@ -18,6 +18,6 @@ angular.module('grafie.layout', ['ui.router'])
                     }
                 }
             });
-        $urlRouterProvider.otherwise('/home/general');
+        $urlRouterProvider.otherwise('/auth/signup');
         //$urlRouterProvider.otherwise('/record');
     });
