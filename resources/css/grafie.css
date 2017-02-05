@@ -192,6 +192,8 @@ input:-moz-placeholder {
 .bannerimage {
     width: 100%;
     height: auto;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
     background-color: #333333;
     background-position: center;
 }
