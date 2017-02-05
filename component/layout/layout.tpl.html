@@ -1,31 +1,55 @@
-<nav class="navbar navbar-inverse" role="navigation" style="margin-bottom: 0px">
-    <div class="navbar-header">
-        <img class="navbar-brand" src="/resources/images/logo.png" style="height: 50px;width: auto">
-        <!--<a class="navbar-brand">Avertus</a>-->
+<!--<nav class="navbar navbar-inverse" role="navigation" style="margin-bottom: 0px">-->
+    <!--<div class="navbar-header">-->
+        <!--<img class="navbar-brand" src="/resources/images/logo.png" style="height: 50px;width: auto">-->
+        <!--&lt;!&ndash;<a class="navbar-brand">Avertus</a>&ndash;&gt;-->
 
-        <!--<a class="navbar-brand" ><img src="/resources/images/logo.png" alt="Avertus">-->
-        <!--</a>-->
-    </div>
-    <ul class="nav navbar-nav">
-        <li><a ui-sref="vemu.home({type:'patient'})">Home</a></li>
-        <li><a ui-sref="vemu.record">Record</a></li>
-        <!--<li><a ui-sref="vemu.patient">Patients</a></li>-->
-        <!--<li><a ui-sref="vemu.graph">Graph</a></li>-->
-        <!--<li><a ui-sref="vemu.session">Sessions</a></li>-->
-    </ul>
-    <ul class="nav navbar-nav navbar-right" style="padding-right: 10px">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle"></i> Evan Shang <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Manage Profile</a></li>
-                <li><a href="#">Logout</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Offline Mode</a></li>
+        <!--&lt;!&ndash;<a class="navbar-brand" ><img src="/resources/images/logo.png" alt="Avertus">&ndash;&gt;-->
+        <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--</div>-->
+    <!--<ul class="nav navbar-nav">-->
+        <!--<li><a ui-sref="vemu.home({type:'patient'})">Home</a></li>-->
+        <!--<li><a ui-sref="vemu.record">Record</a></li>-->
+        <!--&lt;!&ndash;<li><a ui-sref="vemu.patient">Patients</a></li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<li><a ui-sref="vemu.graph">Graph</a></li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<li><a ui-sref="vemu.session">Sessions</a></li>&ndash;&gt;-->
+    <!--</ul>-->
+    <!--<ul class="nav navbar-nav navbar-right" style="padding-right: 10px">-->
+        <!--<li class="dropdown">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle"></i> Evan Shang <span class="caret"></span></a>-->
+            <!--<ul class="dropdown-menu">-->
+                <!--<li><a href="#">Manage Profile</a></li>-->
+                <!--<li><a href="#">Logout</a></li>-->
+                <!--<li role="separator" class="divider"></li>-->
+                <!--<li><a href="#">Settings</a></li>-->
+                <!--<li><a href="#">Offline Mode</a></li>-->
+            <!--</ul>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</nav>-->
+
+<div class="navbar navbar-inverse navbar-fixed-top trans-before" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">Grafie</a>
+        </div>
+
+        <div class="navbar-collapse collapse" style="margin-right: -100px">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
-        </li>
-    </ul>
-</nav>
+        </div><!--/.nav-collapse -->
+    </div>
+</div><!--.navbar-default-->
 
 <div data-smart-router-animation-wrap="content content@grafie" data-wrap-for="#content">
     <div id ="grafieContent" data-ui-view="content" data-autoscroll="false"></div>

@@ -9,9 +9,6 @@
 var jsArray = [];
 
 function loadScript(scriptName, callback) {
-    console.log('hello');
-    console.log(scriptName);
-
     if (!jsArray[scriptName]) {
         jsArray[scriptName] = true;
 
@@ -21,8 +18,6 @@ function loadScript(scriptName, callback) {
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = scriptName;
-
-        console.log(script.src);
 
         // then bind the event to the callback function
         // there are several events for cross browser compatibility
@@ -48,9 +43,6 @@ function loadScript(scriptName, callback) {
 
 
 function preloadComponents($appId, components) {
-    console.log('hello');
-    console.log(component);
-
     var $scriptArray = [];
     var $SmartAdmin = 'SmartAdmin';
 
@@ -58,7 +50,7 @@ function preloadComponents($appId, components) {
         var packageName = components[i].replace($SmartAdmin, 'common');
         var component = packageName.replace($appId + '.', '').toLowerCase().split('.');
         var path = "component/" + component[0];
-        console.log(path);
+
         if(component.length > 1){
             $scriptArray.push(path + "/" + component[1] + "/" + component[1] + ".js");
             $scriptArray.push(path + "/" + component[1] + "/" + component[1] + "Service.js");
@@ -66,7 +58,6 @@ function preloadComponents($appId, components) {
             $scriptArray.push(path + "/" + component[0] + ".js");
             $scriptArray.push(path + "/" + component[0] + "Service.js");
         }
-        console.log($scriptArray);
     }
 
     var $cur = 0;
@@ -88,7 +79,6 @@ function preloadComponents($appId, components) {
             if (window.appConfig.debugState){
                 console.log("Load component %c\"" + $scriptArray[$cur] + "\"", window.appConfig.debugStyle);
             }
-            console.log($scriptArray[$cur]);
             loadScript($scriptArray[$cur], loadComponent);
             $cur++;
         }
@@ -139,7 +129,5 @@ function bulkLoad(scripts) {
 //}
 
 if (angular.isDefined($appId) && angular.isDefined($components)) {
-    console.log('hello');
-    console.log($components);
     preloadComponents($appId, $components);
 }
