@@ -1,9 +1,21 @@
 .wrapper{
-    margin-top: 90px;
+    margin-top: 51px;
+    height: 100vh;
+}
+.backgroundImg{
+    width: auto;
+    height: 100vh;
+    background-image:  url("../images/pattern.png"),  url('../images/covers2.jpg');
+    background-repeat: repeat, no-repeat;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto,cover;
+    -o-background-size: auto,cover;
+    background-size: auto,cover;
+
 }
 
 #signup {
-    padding: 15px 25px 25px;
+    padding: 0px 25px 25px;
     background: #fff;
     box-shadow:
             0px 0px 0px 5px rgba( 255,255,255,0.4 ),
@@ -68,7 +80,7 @@ input:-moz-placeholder {
     border-radius: 3px;
     border: none;
     padding: 13px 10px;
-    width: 350px;
+    width: 330px;
     margin-bottom: 20px;
     box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
     clear: both;
